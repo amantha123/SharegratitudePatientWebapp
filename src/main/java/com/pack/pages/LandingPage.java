@@ -79,4 +79,8 @@ public class LandingPage extends TestBase {
         PrivacyPolicy.click();
         driver.navigate().back();
     }
+
+    public void verifyNavigatingDepartmentPage(){
+        ContinueBtn.click();
+    }
 }
