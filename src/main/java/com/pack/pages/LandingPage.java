@@ -64,4 +64,19 @@ public class LandingPage extends TestBase {
     public boolean verifyPrivacyPolicy(){
         return PrivacyPolicy.isDisplayed();
     }
+
+    public void verifyViewingTermsofService(){
+        TermsofService.click();
+        driver.navigate().back();
+    }
+
+    public void verifyViewingAcceptableUsePolicy(){
+        AcceptableUsePolicy.click();
+        driver.navigate().back();
+    }
+
+    public void verifyViewingPrivacyPolicy(){
+        PrivacyPolicy.click();
+        driver.navigate().back();
+    }
 }

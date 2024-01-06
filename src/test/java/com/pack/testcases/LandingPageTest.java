@@ -43,6 +43,21 @@ public class LandingPageTest extends TestBase {
         landingPage.verifyPrivacyPolicy();
     }
 
+    @Test(priority=3)
+    public void verifyViewingTermsofServiceTest(){
+        landingPage.verifyViewingTermsofService();
+    }
+
+    @Test(priority=4)
+    public void verifyViewingAcceptableUsePolicyTest(){
+        landingPage.verifyViewingAcceptableUsePolicy();
+    }
+
+    @Test(priority=5)
+    public void verifyViewingPrivacyPolicyTest(){
+        landingPage.verifyViewingPrivacyPolicy();
+    }
+
     @AfterMethod
     public void tearDown(){
         driver.quit();
