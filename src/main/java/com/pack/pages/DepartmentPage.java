@@ -42,4 +42,8 @@ public class DepartmentPage extends TestBase {
     public boolean verifyDepartmentOptions(){
         return DepartmentOptions.isDisplayed();
     }
+
+    public void verifyNavigatingRecepientPage(){
+        DepartmentOptions.click();
+    }
 }
