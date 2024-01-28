@@ -55,4 +55,17 @@ public class PaymentPage extends TestBase {
     public boolean verifyPayBtn(){
         return PayBtn.isDisplayed();
     }
+
+    public void verifyMakingPayment(){
+        Name.click();
+        Name.sendKeys("Test");
+
+        Email.click();
+        Email.sendKeys("amanthag1@gmail.com");
+
+        CardNo.click();
+        CardNo.sendKeys("411111111111111");
+
+        PayBtn.click();
+    }
 }
